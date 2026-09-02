@@ -1,6 +1,7 @@
 """
 pk450 — for ile liste doldurma
-Önkoşul: pk430 (dilimleme), pk320 (for ile biriktirme)
+Önkoşul: pk430 (dilimleme), pk320 (for ile biriktirme), pk440 (while ile liste
+doldurma, append()'in öğretildiği yer), pk330 (for'un sınırı, "tam N kere" kuralı)
 Kazanım: for döngüsünde (range ile) append() ile n elemanlı liste doldurabilir.
 kaynak: arsiv/01_9B_2026/186DiziyeKlavyedenVeriGirisiYAP.py
 """

@@ -127,8 +127,8 @@ Liste burada YOK — `for eleman in liste` liste ünitesine taşındı.
 | pk420 | for ile liste üzerinde gezinme | `for eleman in liste` ile bir listenin elemanlarını index kullanmadan gezebilir | pk410, pk310 | çekirdek | 185listeDizi1.py |
 | pk430 | Dilimleme (slicing) | `liste[a:b]` ile alt liste alabilir | pk410 | çekirdek | ssdiziTekrar_Arsivle.py (slicing kısmı) |
 | pk440 | while ile liste doldurma | while döngüsünde `append()` ile listeyi doldurabilir, birden fazla çözüm yolunu karşılaştırabilir | pk430, pk230 | çekirdek | ssdiziTekrar_Arsivle.py (mirsad/selim kod kısmı) |
-| pk450 | for ile liste doldurma | for döngüsünde (range ile) `append()` ile n elemanlı liste doldurabilir | pk430, pk320 | çekirdek | 186DiziyeKlavyedenVeriGirisiYAP.py |
-| pk460 | Index atamasıyla liste doldurma | `[0]*n` ile boş liste oluşturup index ataması yapabilir (append'siz yöntem) | pk410 | genişletme — listeyi doldurmanın üçüncü yolu; 440 ve 450'de iki yöntem zaten öğretildi, yeni kazanım eklemiyor | genelTekrar0_bosDizi.py |
+| pk450 | for ile liste doldurma | for döngüsünde (range ile) `append()` ile n elemanlı liste doldurabilir | pk430, pk320, pk440 (append()'in öğretildiği yer), pk330 (for/while kuralı) | çekirdek | 186DiziyeKlavyedenVeriGirisiYAP.py |
+| pk460 | Index atamasıyla liste doldurma | `[0]*n` ile boş liste oluşturup index ataması yapabilir (append'siz yöntem) | pk410, pk440 (append() referansı, contrast için) | genişletme — listeyi doldurmanın üçüncü yolu; 440 ve 450'de iki yöntem zaten öğretildi, yeni kazanım eklemiyor | genelTekrar0_bosDizi.py |
 | pk470 | Liste analiz sentezi: sayma, toplam, ortalama | Girilen verileri listede toplayıp sayma/toplam/ortalama analizi yapabilir | pk440, pk450 | çekirdek | genelTekrar01_diziWhile.py (cevaplar2.1.py'de benzer bir soru var, referans) |
 
 ---
@@ -234,3 +234,8 @@ zincirleri olan 700/800 gibi üniteleri de çekirdek gösterdiği için yanılt�
 
 **Onaylandı, FAZ 2 üretimi başladı.** Ünite ünite ilerleniyor, her ünite bitince durup
 `backlog.md` güncellenip onay bekleniyor.
+
+**FAZ 2 sırasında bulunan önkoşul grafiği eksikleri:** pk450'nin Önkoşul'una pk440 (append()'in
+öğretildiği yer) ve pk330 (for/while kuralı) eklendi; pk460'ın Önkoşul'una pk440 eklendi
+(script gövdesinde "pkXXX'te öğrendiğin" diye atıf yapılan her ders, artık Önkoşul satırında
+da var — script ile mufredat senkron).

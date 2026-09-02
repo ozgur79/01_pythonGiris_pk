@@ -1,6 +1,7 @@
 """
 pk460 — Index atamasıyla liste doldurma
-Önkoşul: pk410 (liste nedir, oluşturma, index)
+Önkoşul: pk410 (liste nedir, oluşturma, index), pk440 (while ile liste doldurma,
+append()'in öğretildiği yer -- burada CONTRAST için referans veriliyor)
 Kazanım: [0]*n ile boş liste oluşturup index ataması yapabilir (append'siz yöntem).
 kaynak: arsiv/01_9B_2026/genelTekrar0_bosDizi.py
 """

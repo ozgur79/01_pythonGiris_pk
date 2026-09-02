@@ -28,6 +28,13 @@ güncellenir. Ortak bölümler birebir aynı kalır.
   gerçek davranışıyla ayrıca karşılaştırılır. Özellikle "sadece", "her zaman", "asla", "ait
   değil" gibi kesin ifade kullanan yorumlarda TÜM dallar tek tek izlenir — cümle her giriş
   için doğru mu diye. Kod doğru çalışıyor diye yorumun da doğru olduğu varsayılmaz.
+- **Genişletme dersine geri-bağlantı koşulludur:** Bir script, kesilebilecek bir genişletme
+  dersine ("pkXXX'de görmüştük" diye) geri bağlanıyorsa, o dersin işlenmemiş olabileceğini
+  varsay. Ya bağlantıyı koşullu kur ("pkXXX'i işlediyseniz hatırlayacaksınız..."), ya da
+  kavramı bağlantıya hiç yaslanmadan kendi başına anlaşılır anlat. Çekirdek derslere
+  geri-bağlantı serbesttir, onlar kesilmiyor. Şu an genişletme olan dersler: pk030, pk050,
+  pk140, pk250, pk460, pk530, pk620, pk640, pk760, pk770, pk820 (liste `mufredat.md` ile
+  senkron tutulur, yeni ders eklenince/etiket değişince burası da güncellenir).
 
 ## Dosyalar
 
