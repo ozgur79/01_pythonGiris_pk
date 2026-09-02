@@ -2,5 +2,6 @@
 
 Sadece açık işler. Bitince buradan silinir, `backlog-log.md`'ye taşınır.
 
-- FAZ 2 sürüyor. 000 (10 script) ve 100 — Karar yapıları (pk110-pk170, 7 script + 7 çözüm) bitti, onay bekleniyor.
-- Onay gelince 200 ünitesine (while) geçilecek: pk210-pk280.
+- FAZ 2 sürüyor. 000, 100 (Karar yapıları) ve 200 — while (pk210-pk280, 8 script + 8 çözüm) bitti, onay bekleniyor.
+- Not: pk270'te arşivin `%` kullanan "tek sayı üret" örneği, `%` henüz öğretilmediği için (pk280'e kadar) karşılaştırma operatörlü bir örneğe uyarlandı — sessizce kullanma kuralının ilk gerçek testi.
+- Onay gelince 300 ünitesine (for, yalnızca range()) geçilecek: pk310-pk340.
