@@ -40,7 +40,7 @@ güncellenir. Ortak bölümler birebir aynı kalır.
   varsay. Ya bağlantıyı koşullu kur ("pkXXX'i işlediyseniz hatırlayacaksınız..."), ya da
   kavramı bağlantıya hiç yaslanmadan kendi başına anlaşılır anlat. Çekirdek derslere
   geri-bağlantı serbesttir, onlar kesilmiyor. Şu an genişletme olan dersler: pk030, pk050,
-  pk140, pk250, pk460, pk530, pk620, pk640, pk760, pk770, pk820 (liste `mufredat.md` ile
+  pk140, pk250, pk460, pk530, pk640, pk760, pk770, pk820 (liste `mufredat.md` ile
   senkron tutulur, yeni ders eklenince/etiket değişince burası da güncellenir).
 
 ## Dosyalar

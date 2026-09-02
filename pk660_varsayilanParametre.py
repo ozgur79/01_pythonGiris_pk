@@ -1,6 +1,8 @@
 """
 pk660 — Varsayılan parametre değerleri
-Önkoşul: pk610 (fonksiyon tanımı, parametre, return)
+Önkoşul: pk610 (fonksiyon tanımı, parametre, return), pk620 (return'süz, iş
+yapan fonksiyon -- ilk örnekteki selamla() bu türden), pk130 (if-elif-else
+zinciri -- SEN YAP'ta kullanılıyor)
 Kazanım: Parametreye varsayılan değer atayabilir.
 kaynak: YENİ
 """

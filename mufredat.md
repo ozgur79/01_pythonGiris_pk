@@ -4,7 +4,7 @@ Durum: **onaylandı**. Script üretimi (FAZ 2) başladı — ünite ünite ilerl
 bitince durup onay bekleniyor.
 Kaynak: `D:\Atolye\Python\arsiv\01_9B_2026` (59 dosya, dokunulmadı, sadece okundu).
 
-**Özet (ders düzeyi):** 57 ders — **46 çekirdek, 11 genişletme**. Bağlam: haftada 2 saat ×
+**Özet (ders düzeyi):** 57 ders — **47 çekirdek, 10 genişletme**. Bağlam: haftada 2 saat ×
 ~36 hafta ≈ 72 ders saati; bazı scriptler bir saatten uzun sürer, yani 57 dersin hepsi rahat
 sığmayabilir.
 
@@ -20,9 +20,12 @@ Boş numara bırakmak serbest.
 
 **Öncelik etiketi nasıl belirlendi (ders düzeyi):** Mekanik kural — bir ders başka bir dersin
 önkoşuluysa `çekirdek`, hiçbir dersin önkoşulu değilse (yaprak) `genişletme` **adayı**. Ama her
-yaprak tek tek değerlendirildi; bazıları (pk160, pk330, pk520, pk550, pk650) yaprak olmasına
-rağmen gerekçeyle `çekirdek`'e yükseltildi, gerisi `genişletme` kaldı ve her birine tek
-cümlelik gerekçe yazıldı.
+yaprak tek tek değerlendirildi; bazıları (pk160, pk330, pk520, pk550, pk650, pk620) yaprak
+olmasına rağmen gerekçeyle `çekirdek`'e yükseltildi, gerisi `genişletme` kaldı ve her birine
+tek cümlelik gerekçe yazıldı. pk620, FAZ 2'de script yazılırken fark edildi: ilk etiketlenirken
+kazanımı yanlış özetlenmişti ("daire alanı pratiği" — pk630'un tekrarı gibi göründüğü için
+genişletme sanıldı), gerçek kazanımı (return'lü/return'süz fonksiyon ayrımı) ortaya çıkınca
+çekirdeğe yükseltildi.
 
 ## Ünite planı
 
@@ -153,11 +156,11 @@ Dosya işlemleri (open/write/read) buradan çıkarıldı, kendi kapanış ünite
 | pk | Konu | Kazanım | Önkoşul | Öncelik | Kaynak |
 |---|---|---|---|---|---|
 | pk610 | Fonksiyon tanımı, parametre, return | `def` ile fonksiyon tanımlayıp parametre alıp return ile sonuç döndürebilir | pk560, pk040 | çekirdek | 500fonksiyon00.py |
-| pk620 | Tek parametreli fonksiyon, pratik | Gerçek bir problemi (daire alanı) fonksiyon olarak yazabilir | pk610 | genişletme — 610'daki tanımın ilk uygulaması; 630 zaten farklı bir pratik örnek sağlıyor | 501fonksiyon01.py (arşivde `r**2` vardı, öğretilmediği için `r*r` yapıldı) |
+| pk620 | Fonksiyon: return'lü / return'süz ayrım | Fonksiyonun değer döndürmek (return) yerine doğrudan iş yapabileceğini (print) ayırt eder; tek parametreli bir problemi (daire alanı) fonksiyon olarak kurar | pk610 | çekirdek — pk660'ın ilk örneği (return'süz `selamla()`) bu ayrımı hiç açıklamadan kullanıyor; return'lü/return'süz ayrım fonksiyon anlayışının temel yarısı | 501fonksiyon01.py (arşivde `r**2` vardı, öğretilmediği için `r*r` yapıldı) |
 | pk630 | Bool döndüren fonksiyon | Fonksiyondan `True`/`False` döndürüp çağıran tarafta if ile kullanabilir | pk610, pk280 (`%`), pk110 (karşılaştırmanın True/False döndürdüğü yer) | çekirdek | 502fonksiyon.py |
 | pk640 | Fonksiyon + if-elif-else sentezi | Fonksiyon içinde çok koşullu mantık kurabilir | pk630, pk610, pk130, pk550 (f-string) | genişletme — fonksiyon ile elif zincirini birleştiren iyi bir sentez ama iki parça da ayrı ayrı zaten öğretildi (610, 130) | genelTekrar03_def.py (arşivde `num**2` vardı, öğretilmediği için `num*num` yapıldı) |
 | pk650 | Fonksiyona parametre olarak liste, return liste | Listeyi parametre alıp for ile işleyip yeni liste return edebilir | pk610, pk450, pk440 (append()'in öğretildiği yer), pk420 (for eleman in liste) | çekirdek — fonksiyon ve liste ünitelerini birleştiren tek ders; atlanırsa iki ünite birbirine hiç bağlanmamış olur | 503fonksiyon.py (yorumdaki list comprehension "diğer yol" bir not olarak gösterilir, ayrı ders açılmadı) |
-| pk660 | Varsayılan parametre değerleri | Parametreye varsayılan değer atayabilir | pk610 | çekirdek | YENİ |
+| pk660 | Varsayılan parametre değerleri | Parametreye varsayılan değer atayabilir | pk610, pk620 (ilk örnekteki return'süz fonksiyon), pk130 (SEN YAP'ta if-elif) | çekirdek | YENİ |
 
 ---
 
@@ -165,14 +168,29 @@ Dosya işlemleri (open/write/read) buradan çıkarıldı, kendi kapanış ünite
 
 Arşivde hiç yok, tamamen **YENİ**.
 
+**Tuzak kararı — `.items()` ve demet açma (tuple unpacking):** `for anahtar, deger in
+sozluk.items():` en doğal/idiomatik yazım olurdu, ama demet açma müfredatta hiçbir yerde
+öğretilmedi (`%` ve `**` ile aynı tür sessiz sızıntı, ama sözdizimi masum göründüğü için daha
+sinsi). **Kaçınma** yönünde karar verildi: `.items()`/`.keys()`/`.values()` hiç öğretilmiyor,
+bunun yerine `for anahtar in sozluk:` + `sozluk[anahtar]` kalıbı kullanılıyor — bu, zaten
+öğretilmiş iki araçla (pk420'deki for-in, pk720'deki `dict[key]`) tamamen yeterli. Gerekçe:
+müfredat boyunca tutarlı bir tercih zaten buydu (modulo pk270'te, üs alma 620/640'ta hep
+"yeni sözdizimi yerine bilineni kullan" yönünde çözüldü); 700 zaten genişletme ünitesi
+olduğundan, öğrencinin `.items()`'ı idiomatik biçimde hiç görmemesinin bedeli düşük.
+
+**Tersine bağımlılık kuralı:** 700 genişletme ünitesi (bütün olarak düşebilir), bu yüzden
+hiçbir 700 dersi 800'den ya da başka bir çekirdek dersten referans ALMAZ (800 dict
+kullanmıyor zaten) — 700'ün kendisi öncekilere (liste, string, fonksiyon) serbestçe
+referans verebilir, bu tek yönlü.
+
 | pk | Konu | Kazanım | Önkoşul | Öncelik | Kaynak |
 |---|---|---|---|---|---|
-| pk710 | dict nedir, oluşturma | key-value çifti ile dict oluşturabilir | pk660 | çekirdek | YENİ |
+| pk710 | dict nedir, oluşturma | key-value çifti ile dict oluşturabilir | pk660, pk410 | çekirdek | YENİ |
 | pk720 | Erişim, ekleme, güncelleme | `dict[key]` ile okuyup yazabilir, yeni key ekleyebilir | pk710 | çekirdek | YENİ |
 | pk730 | Silme, key kontrolü | `del`, `in` operatörüyle key varlığını kontrol edip silebilir | pk720 | çekirdek | YENİ |
-| pk740 | for ile dict gezme | `.keys()`, `.values()`, `.items()` ile dict'i gezebilir | pk730, pk420 | çekirdek | YENİ |
-| pk750 | Basit uygulama: sözlük/rehber | dict ile küçük bir sözlük veya telefon rehberi uygulaması yazabilir | pk740 | çekirdek | YENİ |
-| pk760 | Liste içinde dict: kayıt yapısı | Kayıt yapısını (öğrenci bilgisi gibi) liste + dict ile modelleyebilir | pk750, pk450 | genişletme — iç içe veri yapısı ileri bir kavram; temel dict kullanımı (710-750) bunsuz da tamamlanmış olur | YENİ |
+| pk740 | for ile dict gezme | `for anahtar in sozluk:` ile gezip `sozluk[anahtar]` ile değere ulaşabilir (`.items()` bilinçli olarak öğretilmiyor, yukarıdaki tuzak kararına bakın) | pk730, pk420, pk720 | çekirdek | YENİ |
+| pk750 | Basit uygulama: sözlük/rehber | dict ile küçük bir sözlük veya telefon rehberi uygulaması yazabilir | pk740, pk230 | çekirdek | YENİ |
+| pk760 | Liste içinde dict: kayıt yapısı | Kayıt yapısını (öğrenci bilgisi gibi) liste + dict ile modelleyebilir | pk750, pk450, pk410, pk710, pk420 | genişletme — iç içe veri yapısı ileri bir kavram; temel dict kullanımı (710-750) bunsuz da tamamlanmış olur | YENİ |
 | pk770 | dict ile sayma/gruplama | Kelime sayma gibi klasik problemi dict ile çözebilir | pk740, pk560 | genişletme — faydalı bir kalıp ama ünitenin çekirdek kazanımı (710-750) buna bağlı değil, kapanışa yakın olduğu için zaman kısıtında ilk kesilecekler arasında | YENİ |
 
 ---
