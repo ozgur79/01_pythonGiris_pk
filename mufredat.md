@@ -197,10 +197,27 @@ referans verebilir, bu tek yönlü.
 
 ## 800 — dosya işlemleri (kapanış ünitesi)
 
+**Dört tuzak, dört karar:**
+- **`with`:** Öğretildi (kaçınılmadı). Gerekçe: `open()+close()` alternatifinin riski
+  (`close()` unutma) `with`i öğrenmenin maliyetinden daha ağır; ayrıca `with` modern
+  Python'ın standardı, öğrenci her kaynakta bunu görecek. `.items()`/`**`/`%` gibi
+  "kaçınılabilir" tuzaklardan farkı bu — burada alternatif gerçekten daha kötü.
+- **Türkçe karakter:** `encoding="utf-8"` parametresi her `open()` çağrısında açıkça
+  kullanıldı ve nedeni anlatıldı (Windows varsayılan kodlaması Türkçe karakterleri bozar).
+- **Dosya nereye kaydediliyor:** Arşivin kendi notu ("C:\Users\PC yoluna kaydeder!") ciddiye
+  alındı — pk810'da açıkça yazılı: dosya, scriptin ÇALIŞTIRILDIĞI klasöre kaydedilir.
+- **`for satir in dosya:`** (üçüncü bir "gezilebilir tür") kullanılmadı. Bunun yerine
+  `readlines()` ile dosya İÇERİĞİ bir LİSTEYE çevrilip pk420'deki bildik `for eleman in liste`
+  ile gezildi — dosya nesnesinin kendisi hiç for'a sokulmadı, tek bir iterable modeli
+  (liste) yeterli kaldı. Yan etki: `readlines()`'ın döndürdüğü her satır kendi `\n`'ini
+  taşıyor; bu, `print(satirlar)` ile ekrana çıkınca öğrenciye görünür oluyor — kaçınmak
+  yerine o anda açıklandı (`\n`'in ne olduğu) ve `end=""` (pk260) ile çift satır atlaması
+  önlendi.
+
 | pk | Konu | Kazanım | Önkoşul | Öncelik | Kaynak |
 |---|---|---|---|---|---|
-| pk810 | Dosyaya yazma, dosyadan okuma | `open()`/`write()`/`read()` (`with` ile) kullanabilir | pk560 | çekirdek | 305farkliMetodlar.py (dosya kısmı) |
-| pk820 | Dosyayı satır satır okuma | `readlines()` veya for ile dosyayı satır satır işleyebilir | pk810, pk320 | genişletme — 810'daki temel oku/yaz zaten çekirdek kazanım; yıl sonuna denk geliyorsa ilk atlanacak | YENİ |
+| pk810 | Dosyaya yazma, dosyadan okuma | `open()`/`write()`/`read()` (`with...as` ile, `encoding="utf-8"` ile) kullanabilir; dosyanın nereye kaydedildiğini bilir | pk560 | çekirdek | 305farkliMetodlar.py (dosya kısmı) |
+| pk820 | Dosyayı satır satır okuma | `readlines()` ile dosyayı bir liste olarak alıp for ile satır satır işleyebilir | pk810, pk410, pk420, pk510 (`len()`), pk260 (`end=`) | genişletme — 810'daki temel oku/yaz zaten çekirdek kazanım; yıl sonuna denk geliyorsa ilk atlanacak | YENİ |
 
 ---
 

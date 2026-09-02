@@ -2,6 +2,6 @@
 
 Sadece açık işler. Bitince buradan silinir, `backlog-log.md`'ye taşınır.
 
-- FAZ 2 sürüyor. 000-600 ve 700 — sözlük/dict (pk710-pk770, 7 script + 7 çözüm) bitti, onay bekleniyor.
-- Karar: 700'de `.items()`/demet açma hiç öğretilmedi (bilinçli tercih, mufredat.md'de gerekçeli) — `for anahtar in sozluk:` + `sozluk[anahtar]` kullanıldı.
-- Onay gelince 800 ünitesine (dosya işlemleri, kapanış) geçilecek: pk810-pk820.
+- FAZ 2 tamamlandı — 000'dan 800'e kadar tüm ünitelerin scriptleri yazıldı (57 script + 57 çözüm), son ünite 800 onay bekliyor.
+- Karar: 800'de `with`/`encoding="utf-8"` öğretildi, dosyanın kaydedildiği yer (çalıştırılan klasör) açıkça yazıldı, `readlines()` ile liste üzerinden gezildi (dosya nesnesi hiç for'a sokulmadı) — gerekçeler mufredat.md'de.
+- Sıradaki: Özgür'ün 800 denetimi + müfredat genelinde bütünlük denetimi (önkoşul tutarlılığı, çekirdek/genişletme sayıları).
