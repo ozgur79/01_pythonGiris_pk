@@ -33,9 +33,18 @@ for sayi in range(1, 6):
 
 
 # --- SEN YAP ---
-# İç içe for kullanarak 1'den 9'a kadar (9 dahil) sayıların hepsi için
-# 1'den 9'a kadar çarpım tablosunu yazdır (klasik "çarpım tablosu", 9x9).
-# Format: "sayi x carpan = sonuc" (yukarıdaki KAVRAM örneğindeki gibi).
-# Her sayının tablosu bitince bir boş satır bırak.
-# Kullanacağın metod: range(), print()
-# Kullanacağın operatör: *
+# pk260'ta iç içe while ile TERS ÜÇGEN çizmiştin (ilk satırda 5 yıldız,
+# azalarak 1'e insin). Şimdi AYNI deseni for ile çiz:
+#
+# * * * * *
+# * * * *
+# * * *
+# * *
+# *
+#
+# İpucu: KAVRAM'daki örneklerde içteki range()'in sınırları HEP SABİTTİ
+# (range(1,6), range(1,11)). Burada içteki range()'in üst sınırı, dıştaki
+# değişkene BAĞLI olmak zorunda (örn. dıştaki değişken "satir" ise,
+# içteki range(1, satir + 1) gibi) -- yoksa üçgen değil kare çıkar.
+# Kullanacağın metod: range(), print(end=" ")
+
