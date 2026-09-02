@@ -152,11 +152,11 @@ Dosya işlemleri (open/write/read) buradan çıkarıldı, kendi kapanış ünite
 
 | pk | Konu | Kazanım | Önkoşul | Öncelik | Kaynak |
 |---|---|---|---|---|---|
-| pk610 | Fonksiyon tanımı, parametre, return | `def` ile fonksiyon tanımlayıp parametre alıp return ile sonuç döndürebilir | pk560 | çekirdek | 500fonksiyon00.py |
-| pk620 | Tek parametreli fonksiyon, pratik | Gerçek bir problemi (daire alanı) fonksiyon olarak yazabilir | pk610 | genişletme — 610'daki tanımın ilk uygulaması; 630 zaten farklı bir pratik örnek sağlıyor | 501fonksiyon01.py |
-| pk630 | Bool döndüren fonksiyon | Fonksiyondan `True`/`False` döndürüp çağıran tarafta if ile kullanabilir | pk610 | çekirdek | 502fonksiyon.py |
-| pk640 | Fonksiyon + if-elif-else sentezi | Fonksiyon içinde çok koşullu mantık kurabilir | pk630, pk130 | genişletme — fonksiyon ile elif zincirini birleştiren iyi bir sentez ama iki parça da ayrı ayrı zaten öğretildi (610, 130) | genelTekrar03_def.py |
-| pk650 | Fonksiyona parametre olarak liste, return liste | Listeyi parametre alıp for ile işleyip yeni liste return edebilir | pk610, pk450 | çekirdek — fonksiyon ve liste ünitelerini birleştiren tek ders; atlanırsa iki ünite birbirine hiç bağlanmamış olur | 503fonksiyon.py (yorumdaki list comprehension "diğer yol" bir not olarak gösterilir, ayrı ders açılmadı) |
+| pk610 | Fonksiyon tanımı, parametre, return | `def` ile fonksiyon tanımlayıp parametre alıp return ile sonuç döndürebilir | pk560, pk040 | çekirdek | 500fonksiyon00.py |
+| pk620 | Tek parametreli fonksiyon, pratik | Gerçek bir problemi (daire alanı) fonksiyon olarak yazabilir | pk610 | genişletme — 610'daki tanımın ilk uygulaması; 630 zaten farklı bir pratik örnek sağlıyor | 501fonksiyon01.py (arşivde `r**2` vardı, öğretilmediği için `r*r` yapıldı) |
+| pk630 | Bool döndüren fonksiyon | Fonksiyondan `True`/`False` döndürüp çağıran tarafta if ile kullanabilir | pk610, pk280 (`%`), pk110 (karşılaştırmanın True/False döndürdüğü yer) | çekirdek | 502fonksiyon.py |
+| pk640 | Fonksiyon + if-elif-else sentezi | Fonksiyon içinde çok koşullu mantık kurabilir | pk630, pk610, pk130, pk550 (f-string) | genişletme — fonksiyon ile elif zincirini birleştiren iyi bir sentez ama iki parça da ayrı ayrı zaten öğretildi (610, 130) | genelTekrar03_def.py (arşivde `num**2` vardı, öğretilmediği için `num*num` yapıldı) |
+| pk650 | Fonksiyona parametre olarak liste, return liste | Listeyi parametre alıp for ile işleyip yeni liste return edebilir | pk610, pk450, pk440 (append()'in öğretildiği yer), pk420 (for eleman in liste) | çekirdek — fonksiyon ve liste ünitelerini birleştiren tek ders; atlanırsa iki ünite birbirine hiç bağlanmamış olur | 503fonksiyon.py (yorumdaki list comprehension "diğer yol" bir not olarak gösterilir, ayrı ders açılmadı) |
 | pk660 | Varsayılan parametre değerleri | Parametreye varsayılan değer atayabilir | pk610 | çekirdek | YENİ |
 
 ---
@@ -254,3 +254,10 @@ Ayrıca pk560'ın KAVRAM'ı kendi öğrettiği "for eleman in X" yöntemini terk
 `range(len(kelime)-1,-1,-1)`'e dönüyordu (üstelik üç argümanlı, içinde iki farklı anlamda -1
 olan bir kalıp) — tek bir `for harf in kelime: ters = harf + ters` döngüsüyle sadeleştirildi,
 artık dersin kendi yöntemiyle tutarlı ve len() de gereksiz hale geldiği için Önkoşul'dan çıktı.
+
+**600 ünitesi (fonksiyon):** Önkoşul satırları baştan (a)/(b) kuralına göre kuruldu, sonradan
+tarama yapılmadı. İki arşiv dosyasında (`501fonksiyon01.py`, `genelTekrar03_def.py`) hiç
+öğretilmemiş `**` (üs alma) vardı, ikisi de `*` ile değiştirildi. pk630, pk640, pk650'nin
+gövdesinde geçen her `pkXXX` (pk110, pk610, pk440 dahil) doğrudan Önkoşul'a yazıldı — transitif
+olarak zincirden ulaşılabilir olsalar bile, script kendi başına okunduğunda dayandığı her ders
+görünür olsun diye.
