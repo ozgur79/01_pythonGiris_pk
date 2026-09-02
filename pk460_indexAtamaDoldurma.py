@@ -8,8 +8,7 @@ kaynak: arsiv/01_9B_2026/genelTekrar0_bosDizi.py
 
 # --- KAVRAM ---
 
-# pk050'de string'i * ile TEKRAR ettiğimizi görmüştük (örn. "ab" * 3 -> "ababab").
-# Liste de AYNI ŞEKİLDE * ile tekrarlanabilir:
+# Liste, * ile TEKRARLANABİLİR (bir string'i * ile tekrar ettiğin gibi):
 print([0] * 5)   # [0] elemanlı listeyi 5 kere tekrarlar -> [0, 0, 0, 0, 0]
 
 # Bu, "N elemanlı, hepsi aynı değerde bir liste" oluşturmanın hızlı bir yolu.

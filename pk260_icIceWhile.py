@@ -1,6 +1,6 @@
 """
 pk260 — İç içe while, desen çizimi
-Önkoşul: pk210 (while temel)
+Önkoşul: pk210 (while temel), pk150 (iç içe if)
 Kazanım: İki sayaçlı iç içe döngüyle satır/sütun deseni çizebilir.
 kaynak: arsiv/01_9B_2026/114stringKare.py, arsiv/01_9B_2026/115stringUcgen.py,
 arsiv/01_9B_2026/ss04.py, arsiv/01_9B_2026/ss05.py, arsiv/01_9B_2026/ss06.py

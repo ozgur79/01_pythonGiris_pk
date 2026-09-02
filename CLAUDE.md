@@ -23,8 +23,15 @@ güncellenir. Ortak bölümler birebir aynı kalır.
   `//`, `+=`, `end=`/`sep=` parametreleri, `\n` kaçış dizisi, f-string.
   Bir ünite bitince teslimden önce Önkoşul taraması **iki ayrı kontrolden** oluşur, ikisi de
   yapılır (biri diğerinin yerine geçmez):
-  - **(a) Açık atıflar:** Gövdedeki her `pkXXX` geçişi — "öğrendiğin", "hatırla",
-    "görmüştük", hangi kelimeyle olursa olsun — o dersin Önkoşul satırında var mı?
+  - **(a) Açık atıflar — sadece BAĞIMLILIK olanlar:** Gövdedeki her `pkXXX` geçişi için ayırt
+    testi şu: *o dersi müfredattan silsen, bu ders hâlâ öğretilebilir mi?* Hayır ise
+    (örn. "pk440'ta öğrendiğin append()" — append() burada açıklanmadan kullanılıyor) bu bir
+    BAĞIMLILIK, Önkoşul'a girer. Evet ise (örn. "IndexError alırsın, pk045'i hatırla" — kavram
+    zaten o an açıklanıyor, atıf sadece çapraz link) bu bir HATIRLATMA, Önkoşul'a GİRMEZ.
+    Kuralı harfiyen ("her pkXXX atfı Önkoşul'a girer" diye) uygulamak grafiği bozar: 57 script
+    otomatik tarandığında 21 "ihlal" çıkmış, elle bakılınca yalnız 2'si gerçek bağımlılıkmış —
+    geri kalanı hatırlatmaymış. Harfiyen uygulansaydı pk045 gibi dersler yapay olarak beş+
+    dersin önkoşulu görünüp çekirdek/genişletme hesabını bozacaktı.
   - **(b) Örtük bağımlılıklar:** Scriptte (SEN YAP dahil) kullanılan her fonksiyon/metod/
     operatör için "bu ilk nerede öğretildi?" sorusu sorulur, o ders Önkoşul'da olmalı —
     burada hatırlatacak bir `pkXXX` metni YOKTUR, bu yüzden (a)'yı yapıp (b)'yi atlamak en

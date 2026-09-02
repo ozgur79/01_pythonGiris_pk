@@ -1,7 +1,8 @@
 # Müfredat — 9. Sınıf Python Giriş (pk)
 
-Durum: **onaylandı**. Script üretimi (FAZ 2) başladı — ünite ünite ilerliyor, her ünite
-bitince durup onay bekleniyor.
+Durum: **TAMAMLANDI**. FAZ 2 (script üretimi) bitti — 000'dan 800'e kadar 9 ünitenin tamamı
+(57 script + 57 çözüm) yazıldı, ünite ünite denetlendi ve onaylandı, sonunda müfredat geneli
+bir bütünlük denetimi yapıldı. Kapanış tarihi: 2026-09-02.
 Kaynak: `D:\Atolye\Python\arsiv\01_9B_2026` (59 dosya, dokunulmadı, sadece okundu).
 
 **Özet (ders düzeyi):** 57 ders — **47 çekirdek, 10 genişletme**. Bağlam: haftada 2 saat ×
@@ -94,7 +95,7 @@ Arşivde tam 7 kaynak dosya var, ünite 7 dersten oluşuyor.
 | pk230 | break, sentinel (durdurucu değer) | `break` ile döngüyü erken sonlandırabilir, "belirli değer girilene kadar" kalıbını kurabilir | pk220 | çekirdek | 103whileBreak.py, ss01_negatifPozitifSıfır.py |
 | pk240 | continue | `continue` ile döngünün kalan gövdesini atlayıp bir sonraki tura geçebilir | pk230 | çekirdek | 104whileContinue.py |
 | pk250 | while(True) + if-else pratik | Sonsuz döngüyü koşullu break ile güvenli kapatabilir | pk240 | genişletme — if-else ve while(True)+break'in ayrı ayrı zaten öğretildiği bir sentez/pratik, yeni mekanik eklemiyor | 052enBoySoru.py (**arşivde break yorum satırında kalmış, script fazında tamamlanacak**) |
-| pk260 | İç içe while, desen çizimi | İki sayaçlı iç içe döngüyle satır/sütun deseni çizebilir | pk210 | çekirdek | 114stringKare.py, 115stringUcgen.py, ss04.py, ss05.py, ss06.py |
+| pk260 | İç içe while, desen çizimi | İki sayaçlı iç içe döngüyle satır/sütun deseni çizebilir | pk210, pk150 (iç içe if) | çekirdek | 114stringKare.py, 115stringUcgen.py, ss04.py, ss05.py, ss06.py |
 | pk270 | random modülü + while | `random.randint()` ile rastgele sayı üretip while ile koşullu üretim yapabilir | pk230 | çekirdek | 180rasgeleSayi.py, 181rasgeleTekSayiYAP.py |
 | pk280 | Karma pratik: faktöriyel, sentinel toplam, modulo desenleri | Öğrenilen while kalıplarını karma bir problemde birleştirebilir | pk270 (kümülatif: pk220-270) | çekirdek | 106whileTopluSorular_Arsivle.py, ssBOM.py*, cevaplar2.1.py (BOM kısmı) |
 
@@ -319,4 +320,18 @@ gerçek kod satırları (yorum/docstring hariç) tarandı: `str()`, `float()`, `
 hiçbir yerde YOK; f-string pk550'den önce, `%` pk280'den önce, `.items()`/`.keys()`/
 `.values()` hiçbir yerde, `split()`/`strip()` pk530 dışında hiçbir yerde kullanılmamış.
 114 dosyanın (57 script + 57 çözüm) tamamı `py_compile` ile sözdizimi hatasız derlendi.
-Kalan tek açık madde: Özgür'ün 800 ünitesini (pk810-pk820) fiilen denetlemesi.
+
+**800 denetimi ve kapanış düzeltmeleri:** Özgür'ün bağımsız denetimi, dört tuzağın (with,
+encoding, dosya konumu, readlines) doğru ele alındığını ve bütünlük denetiminin iddialarını
+doğruladı. İki küçük eksik bulundu: pk260'ın Önkoşul'unda pk150 (iç içe if) eksikti — gövdede
+açıkça geçiyordu, eklendi. pk460, genişletme olan pk050'ye ("string'i * ile tekrar ettiğimizi
+görmüştük") gereksiz bir atıf yapıyordu — kavram zaten hemen altında kendi başına anlatıldığı
+için atıf kaldırıldı, kural gereği pk050 zaten Önkoşul'da hiç yoktu.
+
+Ayrıca (a) kuralı bir ölçümle düzeltildi: 57 script'te "her pkXXX atfı Önkoşul'a girsin"
+kuralı harfiyen taranınca 21 "ihlal" çıktı, elle bakılınca yalnız 2'si gerçek bağımlılıktı.
+Kural artık bağımlılık/hatırlatma ayrımına göre işliyor (ayırt testi: o dersi silsen bu ders
+hâlâ öğretilebilir mi?) — CLAUDE.md/AGENTS.md'de güncellendi.
+
+**Müfredat TAMAMLANDI (2026-09-02).** 9 ünite, 57 ders, 47 çekirdek + 10 genişletme, 57
+script + 57 çözüm, hepsi ünite ünite denetlenip onaylandı.
