@@ -187,7 +187,7 @@ referans verebilir, bu tek yönlü.
 |---|---|---|---|---|---|
 | pk710 | dict nedir, oluşturma | key-value çifti ile dict oluşturabilir | pk660, pk410 | çekirdek | YENİ |
 | pk720 | Erişim, ekleme, güncelleme | `dict[key]` ile okuyup yazabilir, yeni key ekleyebilir | pk710 | çekirdek | YENİ |
-| pk730 | Silme, key kontrolü | `del`, `in` operatörüyle key varlığını kontrol edip silebilir | pk720 | çekirdek | YENİ |
+| pk730 | Silme, key kontrolü | `del`, `in` operatörüyle key varlığını kontrol edip silebilir (in'in `for...in`'den bağımsız, tek başına kullanımı) | pk720, pk420, pk560 | çekirdek | YENİ |
 | pk740 | for ile dict gezme | `for anahtar in sozluk:` ile gezip `sozluk[anahtar]` ile değere ulaşabilir (`.items()` bilinçli olarak öğretilmiyor, yukarıdaki tuzak kararına bakın) | pk730, pk420, pk720 | çekirdek | YENİ |
 | pk750 | Basit uygulama: sözlük/rehber | dict ile küçük bir sözlük veya telefon rehberi uygulaması yazabilir | pk740, pk230 | çekirdek | YENİ |
 | pk760 | Liste içinde dict: kayıt yapısı | Kayıt yapısını (öğrenci bilgisi gibi) liste + dict ile modelleyebilir | pk750, pk450, pk410, pk710, pk420 | genişletme — iç içe veri yapısı ileri bir kavram; temel dict kullanımı (710-750) bunsuz da tamamlanmış olur | YENİ |
@@ -279,3 +279,16 @@ tarama yapılmadı. İki arşiv dosyasında (`501fonksiyon01.py`, `genelTekrar03
 gövdesinde geçen her `pkXXX` (pk110, pk610, pk440 dahil) doğrudan Önkoşul'a yazıldı — transitif
 olarak zincirden ulaşılabilir olsalar bile, script kendi başına okunduğunda dayandığı her ders
 görünür olsun diye.
+
+**pk620 yeniden etiketlendi:** İlk yazımda Kazanım'ı yanlış özetlenmişti ("daire alanı
+pratiği" — pk630'un tekrarı gibi göründüğü için genişletme sanıldı). Gerçek kazanım
+(return'lü/return'süz fonksiyon ayrımı) ortaya çıkınca çekirdeğe yükseltildi; pk660'ın ilk
+örneği bu ayrımı hiç açıklamadan kullanıyordu, pk660'ın Önkoşul'una pk620 ve (SEN YAP'ta
+if-elif için) pk130 eklendi. Özet: 47 çekirdek, 10 genişletme.
+
+**700 ünitesi (sözlük/dict):** `.items()`/demet açma bilinçli olarak öğretilmedi (gerekçe
+yukarıda, 700 başlığı altında). pk730'da olgu hatası vardı — "in'i ilk kez görüyorsun" yanlıştı
+(for...in kalıbında onlarca kez geçmişti), doğrusu "in'in TEK BAŞINA kullanımı yeni" oldu;
+düzeltilirken pk420/pk560 Önkoşul'a eklendi. pk770'in SEN YAP'ı genişletme olan pk530'a
+(split()) gereksiz atıf yapıyordu, kaldırıldı — zaten split() olmadan da çözülebilir bir
+problemdi.

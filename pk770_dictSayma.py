@@ -31,8 +31,8 @@ for harf in sayac:
 
 # --- SEN YAP ---
 # Kullanıcıdan boşluklu bir cümle al (örn. "elma armut elma kiraz").
-# split() KULLANMADAN, cümledeki her KARAKTERİ (boşluklar dahil) sayan bir
-# dict oluştur (yukarıdaki harf sayma kalıbının aynısı, kelime yerine cümle).
+# Cümledeki her KARAKTERİ (boşluklar dahil) sayan bir dict oluştur
+# (yukarıdaki harf sayma kalıbının aynısı, kelime yerine cümle).
 # Sonucu for ile gezip her karakter ve sayısını yazdır.
 # Kullanacağın metod: input(), print()
 # Kullanacağın operatör: in, +=

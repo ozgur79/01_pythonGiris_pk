@@ -1,6 +1,7 @@
 """
 pk730 — Silme, key kontrolü
-Önkoşul: pk720 (erişim, ekleme, güncelleme)
+Önkoşul: pk720 (erişim, ekleme, güncelleme), pk420 (for eleman in liste),
+pk560 (for harf in kelime)
 Kazanım: del, in operatörüyle key varlığını kontrol edip silebilir.
 kaynak: YENİ
 """
@@ -13,8 +14,10 @@ ogrenci = {"isim": "Ali", "yas": 15, "sinif": 9, "okul": "Fen Lisesi"}
 del ogrenci["okul"]
 print("Silindikten sonra:", ogrenci)
 
-# in: bir anahtarın dict'te OLUP OLMADIĞINI kontrol eder, True/False döndürür
-# (pk730'a kadar in'i hiç görmedin -- bu yeni bir operatör)
+# in'i şimdiye kadar hep for ile birlikte gördün: "for harf in kelime" (pk560),
+# "for eleman in liste" (pk420) gibi -- orada in, döngünün BİR PARÇASIYDI.
+# Burada in TEK BAŞINA kullanılıyor ve bir SORU soruyor: "bu anahtar dict'te
+# var mı?" Cevabı True ya da False:
 print("isim" in ogrenci)      # True, çünkü "isim" anahtarı var
 print("okul" in ogrenci)      # False, çünkü az önce sildik
 
