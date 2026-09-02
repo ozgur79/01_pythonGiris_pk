@@ -309,3 +309,14 @@ yukarıda, 700 başlığı altında). pk730'da olgu hatası vardı — "in'i ilk
 düzeltilirken pk420/pk560 Önkoşul'a eklendi. pk770'in SEN YAP'ı genişletme olan pk530'a
 (split()) gereksiz atıf yapıyordu, kaldırıldı — zaten split() olmadan da çözülebilir bir
 problemdi.
+
+**Müfredat geneli bütünlük denetimi (800 sonrası):** 57 satırlık tablo ile 57 script
+birebir eşleşiyor (fazla/eksik yok). Tüm Önkoşul referansları tabloda gerçekten var olan
+ders numaralarına işaret ediyor (yazım hatası yok). Özet sayıları yeniden hesaplandı:
+57 ders, 47 çekirdek + 10 genişletme (pk030, pk050, pk140, pk250, pk460, pk530, pk640,
+pk760, pk770, pk820) — CLAUDE.md/AGENTS.md'deki liste ile birebir aynı. Tüm curriculum'da
+gerçek kod satırları (yorum/docstring hariç) tarandı: `str()`, `float()`, `round()`, `**`
+hiçbir yerde YOK; f-string pk550'den önce, `%` pk280'den önce, `.items()`/`.keys()`/
+`.values()` hiçbir yerde, `split()`/`strip()` pk530 dışında hiçbir yerde kullanılmamış.
+114 dosyanın (57 script + 57 çözüm) tamamı `py_compile` ile sözdizimi hatasız derlendi.
+Kalan tek açık madde: Özgür'ün 800 ünitesini (pk810-pk820) fiilen denetlemesi.
