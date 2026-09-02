@@ -141,10 +141,10 @@ Dosya işlemleri (open/write/read) buradan çıkarıldı, kendi kapanış ünite
 |---|---|---|---|---|---|
 | pk510 | len(), find() | Bir string'in uzunluğunu bulabilir, içinde geçen bir alt metnin konumunu bulabilir | pk470 | çekirdek | 305farkliMetodlar.py (len, find kısmı) |
 | pk520 | upper(), lower() | String'i büyük/küçük harfe çevirebilir. **Geri bağlantı:** pk160'ta (`ss03.py`) `cevap=="ersoy" or cevap=="Ersoy" or cevap=="ERSOY"` diye üç kez `or` yazmıştık — `.lower()` ile artık gerekmiyor. Öğrenci metodun neden var olduğunu tanımdan değil, çektiği sıkıntıdan öğreniyor | pk510, pk160 | çekirdek — pk160'ta üç kez `or` ile çözülen problemin gerçek çözümü burada; salt tanım değil, somut bir ihtiyacın karşılığı | 305farkliMetodlar.py (upper, lower kısmı) |
-| pk530 | split(), strip() | String'i parçalara ayırabilir, baştaki/sondaki boşlukları temizleyebilir | pk510 | genişletme — kullanışlı ama sonraki hiçbir dersin kazanımı bu metodları zorunlu kılmıyor | YENİ |
+| pk530 | split(), strip() | String'i parçalara ayırabilir, baştaki/sondaki boşlukları temizleyebilir | pk510, pk410 (liste index, `kelimeler[0]` için) | genişletme — kullanışlı ama sonraki hiçbir dersin kazanımı bu metodları zorunlu kılmıyor | YENİ |
 | pk540 | String indexleme ve dilimleme | Liste ile paralel olarak string'i index/slice edebilir | pk410, pk430 | çekirdek | YENİ |
 | pk550 | f-string ile biçimlendirme | `f"..."` ile değişkenleri okunaklı biçimde string içine gömebilir | pk510, pk020 | çekirdek — arşivdeki ss dosyaları f-string'i zaten kullanıyor, formal ders yoksa öğrenci gördüğü kodu okuyamaz | YENİ |
-| pk560 | Pekiştirme: string + for sentezi | for ile string karakterlerini gezip sayma/tersten yazdırma/palindrome gibi problemleri çözebilir | pk540, pk320 | çekirdek | YENİ |
+| pk560 | Pekiştirme: string + for sentezi | for ile string karakterlerini gezip sayma/tersten yazdırma/palindrome gibi problemleri çözebilir | pk540, pk320, pk420 (for eleman in liste/string, temel dayanak), pk520 (upper(), SEN YAP'ta) | çekirdek | YENİ |
 
 ---
 
@@ -246,3 +246,11 @@ atıf boşa düşerdi. Örnek pk540'ın kendi içine taşındı (liste[0]=99 sat
 pk460'a hiç yaslanmıyor. Ayrıca pk550'nin Önkoşul'undaki pk030 (genişletme) gereksizdi —
 asıl dayanak pk020'ydi (çekirdek), pk030 referansı kaldırıldı. pk520'nin Önkoşul'una da
 Kazanım'da zaten anlatılan pk160 bağlantısı eklendi (script ile mufredat senkron değildi).
+
+**Önkoşul taramasının iki türü:** pk530'da açık atıf (pk410, "hatırla") kaçmıştı, eklendi.
+pk560'ta ise örtük bağımlılıklar (pk420 for-eleman-in-liste'nin temel dayanağıydı, pk520
+SEN YAP'ta upper() için) hiç yakalanmamıştı — çünkü orada hatırlatacak bir pkXXX metni yoktu.
+Ayrıca pk560'ın KAVRAM'ı kendi öğrettiği "for eleman in X" yöntemini terk edip index-tabanlı
+`range(len(kelime)-1,-1,-1)`'e dönüyordu (üstelik üç argümanlı, içinde iki farklı anlamda -1
+olan bir kalıp) — tek bir `for harf in kelime: ters = harf + ters` döngüsüyle sadeleştirildi,
+artık dersin kendi yöntemiyle tutarlı ve len() de gereksiz hale geldiği için Önkoşul'dan çıktı.

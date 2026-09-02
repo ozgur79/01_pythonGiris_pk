@@ -20,9 +20,16 @@ güncellenir. Ortak bölümler birebir aynı kalır.
   sözdizimi) ya daha önceki bir derste öğretilmiş olacak, ya da o derste açıkça öğretiliyor
   olacak. Önkoşul zinciri ders düzeyinde kırılmaz kuralıydı; bu, aynı kuralın satır düzeyi hâli.
   Özellikle sızma riski yüksek olanlar: `str()`, `float()`, `round()`, `len()`, `%` (mod),
-  `//`, `+=`, `end=`/`sep=` parametreleri, `\n` kaçış dizisi, f-string. Bir ünite bitince
-  teslimden önce scriptler baştan taranır, her yapı için "bu nerede öğretildi?" sorusu
-  sorulur — cevap yoksa ya ders eklenir ya da daha önce öğretilmiş bir şeyle değiştirilir.
+  `//`, `+=`, `end=`/`sep=` parametreleri, `\n` kaçış dizisi, f-string.
+  Bir ünite bitince teslimden önce Önkoşul taraması **iki ayrı kontrolden** oluşur, ikisi de
+  yapılır (biri diğerinin yerine geçmez):
+  - **(a) Açık atıflar:** Gövdedeki her `pkXXX` geçişi — "öğrendiğin", "hatırla",
+    "görmüştük", hangi kelimeyle olursa olsun — o dersin Önkoşul satırında var mı?
+  - **(b) Örtük bağımlılıklar:** Scriptte (SEN YAP dahil) kullanılan her fonksiyon/metod/
+    operatör için "bu ilk nerede öğretildi?" sorusu sorulur, o ders Önkoşul'da olmalı —
+    burada hatırlatacak bir `pkXXX` metni YOKTUR, bu yüzden (a)'yı yapıp (b)'yi atlamak en
+    kolay kaçırma şeklidir (`len()`, `upper()` gibi sızıntılar böyle kaçar).
+  Cevap yoksa ya ders eklenir ya da daha önce öğretilmiş bir şeyle değiştirilir.
 - **Açıklama kontrolü, kod kontrolünden ayrıdır:** Scripti çalıştırmak kodu doğrular, yorum
   satırındaki açıklamayı doğrulamaz. Bir ünite teslim edilmeden önce her yorum satırı, kodun
   gerçek davranışıyla ayrıca karşılaştırılır. Özellikle "sadece", "her zaman", "asla", "ait

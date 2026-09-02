@@ -1,6 +1,6 @@
 """
 pk530 — split(), strip()
-Önkoşul: pk510 (len(), find())
+Önkoşul: pk510 (len(), find()), pk410 (liste index)
 Kazanım: String'i parçalara ayırabilir, baştaki/sondaki boşlukları temizleyebilir.
 kaynak: YENİ
 """

@@ -1,6 +1,8 @@
 """
 pk560 — Pekiştirme: string + for sentezi
-Önkoşul: pk540 (string indexleme ve dilimleme), pk320 (for ile biriktirme)
+Önkoşul: pk540 (string indexleme ve dilimleme), pk320 (for ile biriktirme),
+pk420 (for eleman in liste -- bu dersin temel dayanağı), pk520 (upper(),
+SEN YAP'ta kullanılıyor)
 Kazanım: for ile string karakterlerini gezip sayma/tersten yazdırma/palindrome
 gibi problemleri çözebilir.
 kaynak: YENİ
@@ -20,15 +22,14 @@ for harf in kelime:
         sayac += 1
 print("'a' harfinden", sayac, "tane var")
 
-# --- Tersten yazdırma: index'i geriye doğru gez (pk310'daki azalan range) ---
-for i in range(len(kelime) - 1, -1, -1):
-    print(kelime[i], end="")
-print()
-
-# --- Palindrome kontrolü: kelimeyi tersten yeniden oluştur, karşılaştır ---
+# --- Tersten yazdırma + palindrome: TEK döngüde, index'e hiç gerek kalmadan ---
+# Her yeni harfi, biriktirdiğimiz string'in SONUNA değil BAŞINA ekliyoruz --
+# bu, harflerin sırasını kendiliğinden tersine çeviriyor.
 ters = ""
-for i in range(len(kelime) - 1, -1, -1):
-    ters += kelime[i]   # pk220'deki += kısayolu, string birleştirmede de aynen çalışır
+for harf in kelime:
+    ters = harf + ters   # her yeni harf BAŞA ekleniyor -> sıra tersine dönüyor
+
+print("Tersten yazılışı:", ters)
 
 if kelime == ters:
     print("Bu kelime bir palindrome!")
