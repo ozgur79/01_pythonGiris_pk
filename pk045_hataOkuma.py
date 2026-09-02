@@ -42,7 +42,8 @@ acıyı çektiği yerde öğretiliyor.
 #
 # Okuma: "can only concatenate str (not "int") to str" diyor.
 # Çeviri: string'i ancak string ile birleştirebilirsin, int (15) ile değil.
-# Çözüm: str(15) ile önce string'e çevirmek gerekirdi.
+# Çözüm: 15 yerine tırnak içine alınmış hali "15" yazılsaydı (yani sayı değil,
+# string olsaydı), string+string olur ve hata olmazdı.
 
 # --- 3) ValueError: dönüştürülemeyecek bir veriyi dönüştürmeye çalışmak ---
 # Aşağıdaki satırı çalıştırsaydık (pk040'ta tam burada takılınır):
@@ -65,15 +66,16 @@ acıyı çektiği yerde öğretiliyor.
 # (Girinti hatası olan IndentationError da bir SyntaxError türüdür — onu pk110'da,
 # if öğretilirken tekrar göreceksin.)
 
-# --- Şimdi CANLI bir hata: bu satır kasıtlı olarak çalıştırılıyor ---
-print("Şimdi gerçek bir ValueError göreceksin, aşağıdaki satır kasıtlı olarak hatalı:")
-sayi = int("dört")  # "dört" bir rakam değil, int() bunu çeviremez
-
-
 # --- SEN YAP ---
-# (Bu satıra hiç ulaşılmayacak çünkü yukarıdaki satır programı durdurdu — bu normal.)
-# Programı çalıştırınca çıkan traceback'in EN ALT satırını oku ve şu soruları
-# kağıda/deftere cevapla:
+# Programı çalıştırdığında en sonda GERÇEK bir hata alacaksın (bu kasıtlı, script
+# kasıtlı olarak çöküyor — bunu şimdiden biliyorsun, aşağı okumaya devam et).
+# Çıkan traceback'in EN ALT satırını oku ve şu soruları kağıda/deftere cevapla:
 #   1. Hatanın türü ne (hangi kelime ":"den önce yazıyor)?
 #   2. Hata hangi satırda oluştu?
 #   3. Bu hatayı düzeltmek için kodu nasıl değiştirirdin?
+
+
+# --- Şimdi CANLI bir hata: bu satır kasıtlı olarak çalıştırılıyor ---
+# (Yukarıdaki SEN YAP sorularını zaten okudun, şimdi çalıştırıp cevapla.)
+print("Şimdi gerçek bir ValueError göreceksin, aşağıdaki satır kasıtlı olarak hatalı:")
+sayi = int("dört")  # "dört" bir rakam değil, int() bunu çeviremez

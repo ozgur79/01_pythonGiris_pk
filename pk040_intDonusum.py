@@ -9,12 +9,12 @@ kaynak: arsiv/01_9B_2026/003intToplama.py
 
 # input() her zaman STRING döndürür — sayı gibi görünse bile.
 sayi1_string = input("1. sayıyı gir: ")
-print("Bu aslında bir string, kanıtı:", sayi1_string * 2)  # string 2 kere yazılır, çarpılmaz
+print("Bu aslında bir string, kanıtı:", sayi1_string + sayi1_string)  # string kendiyle YAN YANA yazılır (5 girilirse "55" olur)
 
 # int() bir string'i tam sayıya (integer) çevirir.
 # Artık matematiksel işlem yapabiliriz.
 sayi1 = int(sayi1_string)
-print("Şimdi int oldu, kanıtı:", sayi1 * 2)  # gerçekten 2 ile çarpıldı
+print("Şimdi int oldu, kanıtı:", sayi1 + sayi1)  # gerçekten TOPLANDI (5 girilirse 10 olur)
 
 # Genelde bu iki adım (input + int) tek satırda birleştirilir:
 sayi2 = int(input("2. sayıyı gir: "))

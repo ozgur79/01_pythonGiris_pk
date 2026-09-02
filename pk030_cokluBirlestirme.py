@@ -1,7 +1,8 @@
 """
 pk030 — Çoklu string birleştirme
 Önkoşul: pk020 (yorum satırı, string birleştirme, input)
-Kazanım: Birden çok string değişkeni + ile anlamlı bir cümlede birleştirebilir.
+Kazanım: Birden çok string değişkeni + ile anlamlı bir cümlede birleştirebilir; print()
+içinde virgülün ne yaptığını bilir.
 kaynak: arsiv/01_9B_2026/002stringToplama2.py
 """
 
@@ -17,7 +18,12 @@ mahalle = "Cennet "
 # Aralarına elle yazdığımız kelimeleri de (" ilinde ", " ilçesindeki " gibi)
 # katarak tek bir okunaklı cümle kuruyoruz.
 adres = il + "ilinde " + ilce + "ilçesindeki " + mahalle + "mahallesine gidecek"
-print("Kargo adresi:", adres)
+
+# print()'e virgülle birden fazla şey verebilirsin — bu, + İLE AYNI ŞEY DEĞİL.
+# print(a, b) yazınca Python a'yı yazar, ARAYA KENDİLİĞİNDEN BİR BOŞLUK KOYAR, sonra b'yi yazar.
+# + ise iki string'i OLDUĞU GİBİ yapıştırır, boşluk eklemez (istersen sen elle eklersin).
+print("Kargo adresi:", adres)   # virgül -> "Kargo adresi:" ile adres arasına boşluk KENDİLİĞİNDEN girer
+print("Kargo adresi:" + adres)  # + ile aynısını yazsaydık, arada boşluk OLMAZDI (bitişik yazardı)
 
 # Değişkenlerin sırasını değiştirmek cümlenin anlamını da değiştirir —
 # string birleştirme sırayla yapılır, Python kendiliğinden düzeltmez.

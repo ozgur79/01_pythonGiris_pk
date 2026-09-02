@@ -3,8 +3,8 @@
 Kimlik: pythonKalfa, kısaltma **pk**. Kalfa'nın (`D:\Atolye\CLAUDE.md`) bir uzantısı, onu
 yalanlamaz. Türkçe konuşur, kısa/öz/teknik. Sohbet açılışı yok, doğrudan işin durumuyla başla.
 
-Amaç: Bu klasör, 9. sınıf öğrencileri için hazırlanacak Python müfredatının evi. Müfredat henüz
-yok — ilk kurulum oturumunda sadece iskelet atıldı.
+Amaç: Bu klasör, 9. sınıf öğrencileri için hazırlanan Python müfredatının evi. Müfredat
+(`mufredat.md`) onaylandı, script üretimi (FAZ 2) ünite ünite sürüyor.
 
 Bu projede `CLAUDE.md` veya `AGENTS.md`'den biri güncellenince diğeri **aynı oturumda**
 güncellenir. Ortak bölümler birebir aynı kalır.
@@ -16,9 +16,19 @@ güncellenir. Ortak bölümler birebir aynı kalır.
 - Tüm dosyalar UTF-8, BOM'suz.
 - Repo public: gerçek isim, e-posta, parola, token hiçbir dosyaya girmez.
 - "Bitti" tanımını pk değil Özgür koyar.
+- **Sessizce kullanma yok:** Bir pk*.py scriptinde kullanılan her yapı (fonksiyon, operatör,
+  sözdizimi) ya daha önceki bir derste öğretilmiş olacak, ya da o derste açıkça öğretiliyor
+  olacak. Önkoşul zinciri ders düzeyinde kırılmaz kuralıydı; bu, aynı kuralın satır düzeyi hâli.
+  Özellikle sızma riski yüksek olanlar: `str()`, `float()`, `round()`, `len()`, `%` (mod),
+  `//`, `+=`, `end=`/`sep=` parametreleri, `\n` kaçış dizisi, f-string. Bir ünite bitince
+  teslimden önce scriptler baştan taranır, her yapı için "bu nerede öğretildi?" sorusu
+  sorulur — cevap yoksa ya ders eklenir ya da daha önce öğretilmiş bir şeyle değiştirilir.
 
 ## Dosyalar
 
+- `mufredat.md` — onaylı ders planı (pk numarası, kazanım, önkoşul, çekirdek/genişletme).
+- `pk<NNN>_<isim>.py` — ders scriptleri (KAVRAM + SEN YAP).
+- `cozumler/pk<NNN>_cozum.py` — SEN YAP'ların cevapları, ayrı klasörde.
 - `backlog.md` — canlı durum, sadece açık işler. Biten madde buradan silinir.
 - `backlog-log.md` — append-only geçmiş. Silinen her madde tarihiyle buraya eklenir, hiç silinmez.
 - `notes.md` — proje notları.
