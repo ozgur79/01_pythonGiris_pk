@@ -2,5 +2,5 @@
 
 Sadece açık işler. Bitince buradan silinir, `backlog-log.md`'ye taşınır.
 
-- FAZ 2 (script üretimi) sürüyor, ünite ünite ilerliyor. 000 ünitesi bitti (pk010-pk090, 10 script + 10 çözüm), onay bekleniyor.
-- Onay gelince 100 ünitesine (Karar yapıları) geçilecek: pk110-pk170.
+- FAZ 2 sürüyor. 000 (10 script) ve 100 — Karar yapıları (pk110-pk170, 7 script + 7 çözüm) bitti, onay bekleniyor.
+- Onay gelince 200 ünitesine (while) geçilecek: pk210-pk280.
