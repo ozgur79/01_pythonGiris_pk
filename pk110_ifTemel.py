@@ -29,6 +29,10 @@ print("Programdan çıkıldı...")  # girinti YOK: bu satır if bloğuna AİT DE
 # Girinti (satır başındaki boşluk) süs değil — Python'a "bu satır if'e ait" demenin
 # TEK yoludur. Girintiyi bozarsan (eksik ya da tutarsız boşluk) program hata verir.
 
+# Not: "if yas >= 18:" yerine "if (yas >= 18):" yazmak da ÇALIŞIR — parantez
+# Python'da if koşulunda ZORUNLU değil (bazı eski kaynaklarda/materyallerde
+# parantezli hâlini görebilirsin), ama bu müfredatta parantezsiz yazacağız.
+
 
 # --- SEN YAP ---
 # Kullanıcıdan bir not (0-100 arası bir sayı) al.

@@ -20,10 +20,11 @@ if cevap == "ersoy" or cevap == "Ersoy" or cevap == "ERSOY":
 else:
     print("Bilemedin")
 
-# Karşılaştırma: and yazsaydık ("ersoy" or "Ersoy" or "ERSOY" AYNI ANDA hiçbir
-# zaman doğru olamaz, çünkü kullanıcı tek bir şey yazar) — bu yüzden burada
-# doğru operatör or'dur, and DEĞİL. Hangi operatörü seçeceğin, "ikisi birden mi
-# gerekli (and) yoksa biri yeterli mi (or)" sorusuna verdiğin cevaba bağlı.
+# Karşılaştırma: and yazsaydık:  cevap == "ersoy" and cevap == "Ersoy"
+# Bu ASLA True olamaz, çünkü kullanıcı tek bir şey yazar; aynı anda hem küçük
+# hem büyük harfle yazamaz. Bu yüzden burada doğru operatör or'dur, and DEĞİL.
+# Hangi operatörü seçeceğin, "ikisi birden mi gerekli (and) yoksa biri yeterli
+# mi (or)" sorusuna verdiğin cevaba bağlı.
 
 
 # --- SEN YAP ---

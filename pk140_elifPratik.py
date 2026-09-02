@@ -25,6 +25,12 @@ elif islem_tipi == "*":
     sonuc = sayi1 * sayi2
     print("Sayıların çarpımı:", sonuc)
 elif islem_tipi == "/":
+    # Dikkat: sayi2'ye 0 girersen bu satır ÇÖKER (ZeroDivisionError).
+    # Matematikte de sıfıra bölme tanımsızdır, Python da bunu hata sayar.
+    # Bunu şimdi denemeni öneririz: 2. sayı olarak 0 gir, gerçek hatayı gör.
+    # pk045'i hatırla: traceback'in EN ALT satırı "ZeroDivisionError: division
+    # by zero" diyecek. Bu ders o hatayı ÖNLEMEYİ değil, TANIMAYI öğretiyor —
+    # önleme (if ile kontrol etme) ileride göreceğin bir konu.
     sonuc = sayi1 / sayi2  # / böler, sonucu HER ZAMAN ondalıklı (float) verir
     print("Sayıların bölümü:", sonuc)
 else:
