@@ -23,6 +23,11 @@ güncellenir. Ortak bölümler birebir aynı kalır.
   `//`, `+=`, `end=`/`sep=` parametreleri, `\n` kaçış dizisi, f-string. Bir ünite bitince
   teslimden önce scriptler baştan taranır, her yapı için "bu nerede öğretildi?" sorusu
   sorulur — cevap yoksa ya ders eklenir ya da daha önce öğretilmiş bir şeyle değiştirilir.
+- **Açıklama kontrolü, kod kontrolünden ayrıdır:** Scripti çalıştırmak kodu doğrular, yorum
+  satırındaki açıklamayı doğrulamaz. Bir ünite teslim edilmeden önce her yorum satırı, kodun
+  gerçek davranışıyla ayrıca karşılaştırılır. Özellikle "sadece", "her zaman", "asla", "ait
+  değil" gibi kesin ifade kullanan yorumlarda TÜM dallar tek tek izlenir — cümle her giriş
+  için doğru mu diye. Kod doğru çalışıyor diye yorumun da doğru olduğu varsayılmaz.
 
 ## Dosyalar
 

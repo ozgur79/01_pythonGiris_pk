@@ -23,7 +23,8 @@ while True:
     else:
         print("Geçersiz giriş. Lütfen 'evet' veya 'hayir' girin.")
 
-    print("Hey")  # bu satır SADECE cevap "evet" DEĞİLSE çalışır (continue onu atladığı için)
+    print("Hey")  # SADECE geçersiz giriş yapılınca çalışır:
+                  # "evet" continue ile bu satırı atlar, "hayir" break ile döngüden çıkar
 
 print("Hoscakal")
 

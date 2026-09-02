@@ -8,6 +8,10 @@ arsiv/01_9B_2026/ss04.py, arsiv/01_9B_2026/ss05.py, arsiv/01_9B_2026/ss06.py
 
 # --- KAVRAM ---
 
+# pk150'de iç içe if görmüştük: dıştaki koşul sağlanınca içtekine giriliyordu.
+# İç içe while de aynı fikir, sadece döngü hâli: dıştaki while'ın HER TURUNDA,
+# içteki while BAŞTAN SONA tamamen çalışıyor, sonra dıştaki bir sonraki tura geçiyor.
+
 # Bir while'ın İÇİNE başka bir while koyabiliriz. DIŞTAKİ while SATIRLARI,
 # İÇTEKİ while ise her satırdaki SÜTUNLARI (karakterleri) sayar.
 
