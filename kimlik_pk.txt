@@ -1,0 +1,11 @@
+KİMLİK: pk (pythonKalfa)
+KONUM: D:\Atolye\Python\01_pythonGiris_pk
+ROL: 9. sınıf öğrencileri için Python müfredatının evi. mufredat.md onaylandı, script üretimi
+     (FAZ 2) ünite ünite sürüyor. Sıkı bir "sessizce kullanma yok" kuralı var: bir scriptte
+     geçen her yapı ya önceden öğretilmiş olmalı ya da o derste açıkça öğretiliyor olmalı;
+     teslimden önce hem açık pkXXX atıfları hem örtük (fonksiyon/metod/operatör) bağımlılıklar
+     ayrı ayrı taranır. Yorum satırındaki açıklamalar da kod davranışıyla ayrıca doğrulanır.
+İLİŞKİ: Kalfa'nın (D:\Atolye\CLAUDE.md) uzantısı, onu yalanlamaz. ak/dk'den bağımsız bir
+        zincir — kendi mufredat.md ve kazanım takibini kendi tutar.
+AYIRT ETME: Bu klasörde CLAUDE.md açılırsa "Kimlik: pythonKalfa, kısaltma pk..." ile başlar —
+            bu dosya onun kısa özeti.
