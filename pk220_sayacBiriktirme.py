@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, while ile 1'den 10'a kadar sayıları "toplam" değişkeninde biriktirip toplamı yazdırır
+# (55). Aynı hesabı += kısa yazımıyla tekrarlayıp yine toplamı yazdırır.
+
 """
 pk220 — Sayaçla biriktirme
 Önkoşul: pk210 (while temel), pk080 (biriktirme girişi)

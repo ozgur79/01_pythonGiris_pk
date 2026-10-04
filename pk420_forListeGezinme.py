@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, [1, 2, 3, 4, 5] listesini önce range() ile index üzerinden, sonra doğrudan for eleman in
+# liste ile gezip yazdırır (iki çıktı aynı). Ardından "Sivas", "Ankara", "İzmir" için "<şehir>
+# güzel bir şehir" yazdırır.
+
 """
 pk420 — for ile liste üzerinde gezinme
 Önkoşul: pk410 (liste nedir, oluşturma, index), pk310 (range() temelleri)

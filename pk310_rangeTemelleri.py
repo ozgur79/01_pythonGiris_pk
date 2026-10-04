@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, for ile range(5) (0-4), aynı işin while hâlini, range(1, 6), range(10, 25, 5) (10, 15,
+# 20) ve range(5, 0, -1) (5'ten 1'e) sayılarını alt alta yazdırır; bölümler arasına "---" koyar.
+
 """
 pk310 — range() temelleri
 Önkoşul: pk280 (200 ünitesinin tamamı: while)

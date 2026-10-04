@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, for ile 1'den 10'a kadar toplamı hesaplayıp yazdırır (55). Sonra kullanıcıdan sayı alıp
+# for range(1, sayi + 1) ile faktöriyelini hesaplar ve "<sayı> ! = <sonuç>" yazdırır.
+
 """
 pk320 — for ile biriktirme, faktöriyel
 Önkoşul: pk310 (range() temelleri)

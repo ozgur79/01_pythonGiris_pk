@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, 5>3, 5<3, 5>=5, 5<=4, 5==5, 5!=3 karşılaştırmalarının True/False sonuçlarını yazdırır.
+# Sonra yaş alır; yaş >= 18 ise "Ehliyet alabilir." ve "Dikkatli araba kullan!" yazar, her durumda
+# en sonda "Programdan çıkıldı..." yazar.
+
 """
 pk110 — if temel, girinti, karşılaştırma operatörleri
 Önkoşul: pk090 (temel ünitesinin tamamı)

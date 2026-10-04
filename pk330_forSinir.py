@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, for ile 1'den 5'e "Tur: <i>" yazdırır. Sonra while True ile 0 girilene kadar sayı alıp
+# toplar ve toplamı yazdırır (iter(int, 1) ile yazılmış alternatif yalnız yorumdadır, çalışmaz).
+
 """
 pk330 — for'un sınırı: ne zaman while kullanılır
 Önkoşul: pk320 (for ile biriktirme), pk230 (break, sentinel)

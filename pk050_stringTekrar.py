@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, 5 * 4 sonucunu yazdırır. Kullanıcıdan bir kelime alıp 4 kere yan yana yazar (string *
+# 4), sonra bir sayı alıp int'e çevirir ve 4 ile gerçekten çarpıp yazdırır.
+
 """
 pk050 — String tekrar (*) gözlemi
 Önkoşul: pk045 (hata mesajı okuma)

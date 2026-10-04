@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, [10, 20, 30, 40, 50] listesini yazdırır, sonra liste[0], liste[1], liste[4] (10, 20, 50)
+# ve negatif index'lerle liste[-1], liste[-2] (50, 40) elemanlarını yazdırır.
+
 """
 pk410 — Liste nedir, oluşturma, index
 Önkoşul: pk340 (300 ünitesinin tamamı: for, yalnızca range())

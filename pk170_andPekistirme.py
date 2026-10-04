@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, yaşı ve "Sürücü kursunu tamamladınız mı? (evet/hayir)" cevabını alır. Yaş >= 18 and
+# cevap "evet" ise "Ehliyet alabilir.", aksi halde "Ehliyet alamaz." yazar.
+
 """
 pk170 — Pekiştirme: and ile bağımsız pratik
 Önkoşul: pk150 (and operatörü)

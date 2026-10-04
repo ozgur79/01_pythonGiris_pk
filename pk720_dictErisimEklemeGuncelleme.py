@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, ogrenci sözlüğünde "sinif" değerini 10 yapar, "okul": "Fen Lisesi" anahtarını ekler ve
+# her adımdan sonra sözlüğü yazdırır. Var olmayan anahtarı okuma hatası (KeyError) yalnız yorumda
+# anlatılır.
+
 """
 pk720 — Erişim, ekleme, güncelleme
 Önkoşul: pk710 (dict nedir, oluşturma)

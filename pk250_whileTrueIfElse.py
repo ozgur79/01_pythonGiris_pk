@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, en ve boy ister; en ya da boy 0 ise break ile çıkar. Aksi halde en == boy ise "Kare",
+# değilse "Dikdörtgen" yazar ve yeni en/boy ister. Çıkınca "Programdan çıkıldı" yazar.
+
 """
 pk250 — while(True) + if-else pratik
 Önkoşul: pk240 (continue)

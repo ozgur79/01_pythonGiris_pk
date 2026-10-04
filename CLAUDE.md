@@ -56,6 +56,14 @@ güncellenir. Ortak bölümler birebir aynı kalır.
   geri-bağlantı serbesttir, onlar kesilmiyor. Şu an genişletme olan dersler: pk030, pk050,
   pk140, pk250, pk460, pk530, pk640, pk760, pk770, pk820 (liste `mufredat.md` ile
   senkron tutulur, yeni ders eklenince/etiket değişince burası da güncellenir).
+- **Her kod dosyası "BU KOD NE YAPAR?" bloğuyla başlar:** Her `pk*.py` dosyasının en
+  başında, başlık yorumundan (docstring) ÖNCE ayrı bir blok durur; kodun ne yaptığını 2-3
+  satırda somut anlatır. Sayı/metin/isim gibi somut değerler yazılır (örn. "5 öğrencinin
+  yaşını alır", "7'ye tam bölünenlerin yerine BOM yazar"). Yorum sözdizimi `#`. Bozuk-kod
+  (onar) alıştırmalarında yalnız amaç yazılır, hata ele verilmez. `cozumler/` altı kapsam
+  dışı. Blok kod okunarak yazılır, tahminle değil; "Açıklama kontrolü" kuralı bloğa da
+  uygulanır. Örnek:
+  `# BU KOD NE YAPAR?` / `# Bu kod, 1'den 10'a kadar sayıları while ile toplayıp 55 yazdırır.`
 
 ## Dosyalar
 

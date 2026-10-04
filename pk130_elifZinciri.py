@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, puan alıp if-elif zinciriyle sınıflandırır: <0 "Geçersiz puan", <50 "Kaldı", <55
+# "Geçer", <70 "Orta", <85 "İyi", <101 "Pekiyi", diğerleri "Geçersiz puan". Sonda "Programdan
+# çıkıldı... puan: <puan>" yazar.
+
 """
 pk130 — if-elif-else zinciri
 Önkoşul: pk120 (if-else)

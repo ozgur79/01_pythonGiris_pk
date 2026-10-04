@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, 1. sayıyı input() ile alıp önce string olarak kendisiyle birleştirir (5 girilirse "55"),
+# sonra int() ile çevirip kendisiyle toplar (5 girilirse 10). Ardından 2. sayıyı int(input()) ile
+# alıp iki sayının toplamını yazdırır.
+
 """
 pk040 — int() dönüşümü, sayısal toplama
 Önkoşul: pk020 (input, string birleştirme)

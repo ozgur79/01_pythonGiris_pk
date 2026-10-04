@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, random.randint(1, 100) ile rastgele bir sayı üretip yazdırır. Sonra while ile 80'den
+# büyük bir sayı gelene kadar tekrar sayı üretir, her denemeyi "Denendi: <sayı>" yazar, sonunda
+# bulunan sayıyı yazar.
+
 """
 pk270 — random modülü + while
 Önkoşul: pk230 (break, sentinel)

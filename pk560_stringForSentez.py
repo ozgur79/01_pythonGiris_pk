@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, kullanıcıdan bir kelime alır. for ile kelimedeki "a" harflerini sayıp yazdırır; harfleri
+# sürekli başa ekleyerek kelimenin tersini yazdırır; kelime tersiyle aynıysa "palindrome" mesajı
+# verir.
+
 """
 pk560 — Pekiştirme: string + for sentezi
 Önkoşul: pk540 (string indexleme ve dilimleme), pk320 (for ile biriktirme),

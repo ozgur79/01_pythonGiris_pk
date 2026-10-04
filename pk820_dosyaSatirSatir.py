@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, üç satırlık bir günlük metnini "gunluk.txt" dosyasına yazar, readlines() ile satır
+# listesi olarak okuyup listeyi ve satır sayısını yazdırır. Sonra her satırı end="" ile "->
+# <satır>" biçiminde yazdırır.
+
 """
 pk820 — Dosyayı satır satır okuma
 Önkoşul: pk810 (dosyaya yazma, dosyadan okuma), pk410 (liste), pk420

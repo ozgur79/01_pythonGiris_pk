@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, kullanıcı adı ve parola ister; "fatih" / "f1453" doğru mu diye önce iç içe if ile, sonra
+# aynı kontrolü and ile tek if'te yapar (bilgiler iki kez sorulur). Doğruysa "Başarılı giriş",
+# değilse "Hatalı giriş" yazar.
+
 """
 pk150 — and operatörü + iç içe if karşılaştırması
 Önkoşul: pk120 (if-else)

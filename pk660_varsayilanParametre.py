@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, mesaj parametresi varsayılan "Merhaba" olan selamla(isim, mesaj) fonksiyonunu
+# selamla("Ali") ve selamla("Veli", "Selam") ile çağırır. Sonra saatlik_ucret varsayılanı 50 olan
+# ucret_hesapla(saat, saatlik_ucret) fonksiyonunu (10) ve (10, 75) ile çağırıp sonuçları yazdırır.
+
 """
 pk660 — Varsayılan parametre değerleri
 Önkoşul: pk610 (fonksiyon tanımı, parametre, return), pk620 (return'süz, iş

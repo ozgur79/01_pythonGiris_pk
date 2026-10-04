@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, print() ile ekrana "merhaba dünya" yazar (bir kez çift tırnakla, bir kez tek tırnakla).
+# Ardından "Python öğrenmeye başladık." ve "Her print() yeni bir satır açar." cümlelerini alt alta
+# yazdırır.
+
 """
 pk010 — İlk program: print, string literal
 Önkoşul: yok (ilk ders)

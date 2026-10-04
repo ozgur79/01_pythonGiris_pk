@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, "Python" metninden metin[0], metin[-1], metin[0:3] ve metin[3:] değerlerini yazdırır.
+# Listede liste[0] = 99 atamasını gösterir; string'de aynı atamanın TypeError vereceğini yalnız
+# yorumda anlatır (çalıştırmaz).
+
 """
 pk540 — String indexleme ve dilimleme
 Önkoşul: pk410 (liste index), pk430 (liste dilimleme)

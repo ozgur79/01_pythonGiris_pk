@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, while True içinde "evet/hayir" sorar. "evet" ise "Devam ediliyor..." yazıp continue ile
+# başa döner; "hayir" ise "Döngüden çıkılıyor." yazıp break eder; başka bir şeyse uyarı yazıp
+# "Hey" yazdırır. Döngüden sonra "Hoscakal" yazar.
+
 """
 pk240 — continue
 Önkoşul: pk230 (break, sentinel)

@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, boş listeye append() ile 10, 20, 30 ekleyip yazdırır. Sonra while ile kullanıcıdan 5
+# sayı alıp listeye ekler; ardından 0 girilene kadar sayı alıp ikinci bir listeye ekler. Her iki
+# listeyi de yazdırır.
+
 """
 pk440 — while ile liste doldurma
 Önkoşul: pk430 (dilimleme), pk230 (break, sentinel)

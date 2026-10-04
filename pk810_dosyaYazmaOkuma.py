@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, "Python öğrenmek çok eğlenceli!" metnini with open() ile "ornek.txt" dosyasına utf-8
+# olarak yazar. Sonra aynı dosyayı okuma modunda açıp içeriğini read() ile okuyup yazdırır.
+
 """
 pk810 — Dosyaya yazma, dosyadan okuma
 Önkoşul: pk560 (500 ünitesinin tamamı: string metodları)

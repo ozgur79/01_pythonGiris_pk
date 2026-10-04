@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, iki sayı ve işlem tipi (+ - * /) alır; if-elif ile toplamı, farkı, çarpımı ya da bölümü
+# yazdırır, başka işaret girilirse "Yanlış işlem tipi girdiniz." yazar. İşlem "/" seçilip 2. sayı
+# 0 girilirse ZeroDivisionError ile çöker.
+
 """
 pk140 — if-elif pratik, farklı senaryo
 Önkoşul: pk130 (if-elif-else zinciri)

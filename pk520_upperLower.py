@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, "Python Programlama" metnini upper() ve lower() ile yazdırır. Sonra "İstiklal Marşı
+# şairimizin soyadı nedir?" diye sorar; cevabı hem üç or'lu eski yöntemle hem cevap.lower() ==
+# "ersoy" ile kontrol edip "Bildin" mesajı yazar.
+
 """
 pk520 — upper(), lower()
 Önkoşul: pk510 (len(), find()), pk160 (or operatörü)

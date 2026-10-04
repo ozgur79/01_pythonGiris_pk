@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, isim "Ali" ve yas 15 ile aynı cümleyi üç yolla yazdırır: + ile str(yas), print()'te
+# virgülle ve f-string ile. Sonra f-string içinde hesap yapıp "5 yıl sonra Ali, 20 yaşında
+# olacak." yazdırır.
+
 """
 pk550 — f-string ile biçimlendirme
 Önkoşul: pk510 (len(), find()), pk020 (string birleştirme)

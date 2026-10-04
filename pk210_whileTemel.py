@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, while ile x'i 1'den 5'e kadar "<x> . tekrar" biçiminde yazdırır, sonra x'in son değerini
+# yazar. Ardından sayac ile 1'den 10'a kadar sayıları alt alta yazar; döngü bitince sayac'ı bir
+# artırıp yazdırır (12).
+
 """
 pk210 — while temel, girinti
 Önkoşul: pk170 (100 ünitesinin tamamı: karar yapıları)

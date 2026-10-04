@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, "Python programlama çok eğlenceli" metninin uzunluğunu len() ile, "programlama" ve
+# "java" kelimelerinin konumunu find() ile yazdırır (bulunamayan için -1 çıkar). Sonra len([10,
+# 20, 30]) ile liste eleman sayısını yazdırır.
+
 """
 pk510 — len(), find()
 Önkoşul: pk470 (400 ünitesinin tamamı: liste)

@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, kullanıcıdan input() ile adını ve yaşadığı şehri alır. "Merhaba, <isim>!" yazdırır,
+# sonra isim ve şehri + ile birleştirip "<isim> <şehir>'da yaşıyor." cümlesini yazdırır.
+
 """
 pk020 — Yorum satırı (tekli + çok satırlı) + string birleştirme + input
 Önkoşul: pk010 (print, string literal)

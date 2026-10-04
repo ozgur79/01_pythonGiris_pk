@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, [0] * 5 listesini yazdırır. Sonra [0] * 5 ile oluşturduğu listenin her index'ine while
+# ile liste[sayac] = sayac * 10 atar (0, 10, 20, 30, 40) ve listeyi yazdırır.
+
 """
 pk460 — Index atamasıyla liste doldurma
 Önkoşul: pk410 (liste nedir, oluşturma, index), pk440 (while ile liste doldurma,

@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, yorum satırlarında NameError, TypeError, ValueError ve SyntaxError örneklerini traceback
+# çıktılarıyla anlatır. En sonda kasıtlı olarak int("dört") çalıştırıp ValueError ile çöker;
+# öğrenci o hata mesajını okur.
+
 """
 pk045 — Hata mesajı okuma
 Önkoşul: pk040 (int() dönüşümü)

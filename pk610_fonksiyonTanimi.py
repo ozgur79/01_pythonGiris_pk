@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, topla(a, b) fonksiyonunu tanımlayıp topla(3, 5), topla(10, 20), topla(100, 1)
+# sonuçlarını yazdırır. Sonra karesini_al(sayi) fonksiyonunu tanımlayıp 5 ve 8 için karesini
+# yazdırır.
+
 """
 pk610 — Fonksiyon tanımı, parametre, return
 Önkoşul: pk560 (500 ünitesinin tamamı: string metodları), pk040 (int, aritmetik)

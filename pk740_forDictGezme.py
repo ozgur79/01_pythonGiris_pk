@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, ogrenci sözlüğünü for ile gezip önce yalnız anahtarları ("isim", "yas", "sinif"), sonra
+# her anahtarı değeriyle birlikte "<anahtar> -> <değer>" biçiminde yazdırır.
+
 """
 pk740 — for ile dict gezme
 Önkoşul: pk730 (silme, key kontrolü), pk420 (for eleman in liste), pk720

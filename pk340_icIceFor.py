@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, iç içe for ile 5x5'lik bir yıldız karesi çizer, "---" yazar, sonra 1'den 5'e kadar her
+# sayının 1-10 çarpım tablosunu "<sayı> x <çarpan> = <sonuç>" biçiminde yazdırır (her tablodan
+# sonra boş satır).
+
 """
 pk340 — İç içe for: çarpım tablosu
 Önkoşul: pk310 (range() temelleri), pk260 (iç içe while)

@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, for i in range(5) ile kullanıcıdan 5 sayı alır, her birini append() ile listeye ekler ve
+# listeyi yazdırır.
+
 """
 pk450 — for ile liste doldurma
 Önkoşul: pk430 (dilimleme), pk320 (for ile biriktirme), pk440 (while ile liste

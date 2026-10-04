@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, yarıçaptan pi = 3.14 ile daire alanını hesaplayıp fonksiyonun içinde yazdıran
+# daire_alani_hesapla(yaricap) fonksiyonunu tanımlar (return yok). Kullanıcıdan yarıçap alıp
+# fonksiyonu çağırır.
+
 """
 pk620 — Tek parametreli fonksiyon, pratik
 Önkoşul: pk610 (fonksiyon tanımı, parametre, return)

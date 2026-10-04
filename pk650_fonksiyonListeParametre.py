@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, listedeki her sayının karesini yeni bir listeye ekleyip döndüren karelerini_al(sayilar)
+# fonksiyonunu tanımlar. [1, 2, 3, 4, 5] ile çağırıp kareler listesini ve değişmemiş orijinal
+# listeyi yazdırır.
+
 """
 pk650 — Fonksiyona parametre olarak liste, return liste
 Önkoşul: pk610 (fonksiyon tanımı, parametre, return), pk450 (for ile liste

@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, üç iş yapar: (1) kullanıcının girdiği sayının faktöriyelini while ile hesaplar; (2) 0
+# girilene kadar sayı alıp toplar; (3) 7 % 2, 10 % 5, 9 % 4 kalanlarını yazar, sonra 1'den 30'a
+# kadar sayıları yazar, 7'ye tam bölünenlerin yerine "BOM" yazar.
+
 """
 pk280 — Karma pratik: faktöriyel, sentinel toplam, modulo desenleri
 Önkoşul: pk270 (random modülü + while); kümülatif olarak pk220-pk270

@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, {"isim": "Ali", "yas": 15, "sinif": 9} sözlüğünü oluşturup tamamını yazdırır, sonra
+# ogrenci["isim"] ve ogrenci["yas"] değerlerini ayrı ayrı yazdırır.
+
 """
 pk710 — dict nedir, oluşturma
 Önkoşul: pk660 (600 ünitesinin tamamı: fonksiyon), pk410 (liste -- karşılaştırma için)

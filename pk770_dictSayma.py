@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, kullanıcıdan bir kelime alır ve for ile her harfin kaç kez geçtiğini bir sözlükte sayar
+# (harf varsa +1, yoksa 1 yapar). Sözlüğü yazdırır, sonra "<harf> : <sayı> kere" biçiminde gezip
+# yazdırır.
+
 """
 pk770 — dict ile sayma/gruplama
 Önkoşul: pk740 (for ile dict gezme), pk560 (string + for sentezi)

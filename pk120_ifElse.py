@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, yaş alır. Yaş >= 18 ise "Ehliyet alabilir." ve "Dikkatli araba kullan!", değilse
+# "Ehliyet alamaz!" ve "Büyüyünce gel :)" yazar; her durumda en sonda "Programdan çıkıldı..."
+# yazar.
+
 """
 pk120 — if-else
 Önkoşul: pk110 (if temel, girinti, karşılaştırma operatörleri)

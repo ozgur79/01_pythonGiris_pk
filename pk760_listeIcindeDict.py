@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, her biri isim ve puan içeren üç dict'ten oluşan bir listeyi (Ali 70, Veli 45, Ayşe 90)
+# for ile gezip "<isim> -> <puan>" yazdırır, sonra ogrenciler[0]["isim"] ile ilk öğrencinin ismini
+# yazdırır.
+
 """
 pk760 — Liste içinde dict: kayıt yapısı
 Önkoşul: pk750 (basit uygulama: sözlük/rehber), pk450 (for ile liste doldurma),

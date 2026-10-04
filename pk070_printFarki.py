@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, kullanıcıdan isim ve doğum yılı alır, yaşı 2026 - yıl ile hesaplayıp "<isim> <yaş>
+# yaşındadır" yazdırır. Sonra print(isim) ile print("isim"), print(yil) ile print("yil") farkını
+# gösterir (değişkenin değeri mi, kelimenin kendisi mi).
+
 """
 pk070 — print() içinde değişken/string literal farkı
 Önkoşul: pk060 (değişkende ara sonuç saklama)

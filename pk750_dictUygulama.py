@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, boş bir rehber sözlüğüne Ali, Veli ve Ayşe'nin numaralarını ekler ve hepsini for ile
+# yazdırır. Sonra aranan ismi sorar; rehberdeyse numarasını, değilse "rehberde kayıtlı değil"
+# yazar.
+
 """
 pk750 — Basit uygulama: sözlük/rehber
 Önkoşul: pk740 (for ile dict gezme), pk230 (while True + break, sentinel)

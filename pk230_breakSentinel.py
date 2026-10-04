@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, while True döngüsünde sayı ister; 5 girilince mesaj yazıp break ile çıkar, değilse "5
+# değil, devam ediliyor." yazar. İkinci döngüde sayı isteyip "pozitif" ya da "negatif" yazdırır; 0
+# girilince "Programdan çıkıldı" yazıp break ile çıkar.
+
 """
 pk230 — break, sentinel (durdurucu değer)
 Önkoşul: pk220 (sayaçla biriktirme)

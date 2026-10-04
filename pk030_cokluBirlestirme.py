@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, "Sivas ", "Kangal ", "Cennet " değişkenlerini + ile arada kelimelerle birleştirip bir
+# kargo adresi cümlesi kurar. Aynı adresi print()'te virgülle (araya boşluk girer) ve + ile
+# (boşluksuz) yazdırır, sonra parçaları ters sırayla birleştirip ikinci bir adres yazdırır.
+
 """
 pk030 — Çoklu string birleştirme
 Önkoşul: pk020 (yorum satırı, string birleştirme, input)

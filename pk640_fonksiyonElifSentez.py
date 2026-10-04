@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, sayi_analiz(num) fonksiyonunu tanımlar: negatifse "Negatif sayı girdiniz: <num>", 0 ise
+# "Sıfır girdiniz.", pozitifse "Sonuç: <num * num>" yazar. Fonksiyonu -5, 0 ve 3 ile çağırır.
+
 """
 pk640 — Fonksiyon + if-elif-else sentezi
 Önkoşul: pk630 (bool döndüren fonksiyon), pk610 (fonksiyon tanımı -- bu derste

@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, "   Merhaba Dünya   " metnini köşeli parantez içinde strip() öncesi ve sonrası yazdırır.
+# Sonra "elma armut çilek".split() listesini ve ilk elemanını yazdırır.
+
 """
 pk530 — split(), strip()
 Önkoşul: pk510 (len(), find()), pk410 (liste index)

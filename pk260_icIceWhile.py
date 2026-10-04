@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, iç içe while ile ekrana 5x5'lik bir yıldız karesi çizer, "---" yazar, sonra satır
+# numarası kadar yıldız içeren (1'den 5'e artan) bir yıldız üçgeni çizer. Yıldızları yan yana
+# basmak için print(end=" ") kullanır.
+
 """
 pk260 — İç içe while, desen çizimi
 Önkoşul: pk210 (while temel), pk150 (iç içe if)

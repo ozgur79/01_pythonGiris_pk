@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, "İstiklal Marşı şairimizin soyadı nedir?" diye sorar. Cevap "ersoy", "Ersoy" ya da
+# "ERSOY" ise (üç koşul or ile bağlı) "Bildin", değilse "Bilemedin" yazar.
+
 """
 pk160 — or operatörü
 Önkoşul: pk150 (and operatörü + iç içe if karşılaştırması)

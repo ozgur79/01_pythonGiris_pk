@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, kullanıcıdan bir sayı alır, karesini "karesi" değişkeninde saklayıp yazdırır ve karenin
+# iki katını hesaplayıp yazdırır. Sonra sayi değişkenini 10 artırıp yeni değerini yazdırır.
+
 """
 pk060 — Değişkende ara sonuç saklama
 Önkoşul: pk040 (int() dönüşümü, sayısal toplam)

@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, isim ve doğum yılı alıp "<isim> <yaş> yaşındadır." yazdırır, print(isim) ile
+# print("isim") farkını gösterir. Sonra 3 sayıyı alıp toplam değişkeninde biriktirir ve toplamı
+# yazdırır (pk010-pk080'in karması).
+
 """
 pk090 — Pekiştirme: temel ünitesi karma
 Önkoşul: pk010-pk080 (temel ünitesinin tamamı)

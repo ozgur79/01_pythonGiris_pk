@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, 5 öğrencinin yaşını while ile alıp listeye ekler; 18'den küçük ve 18 ve üzeri kişi
+# sayılarını ve yaş toplamını biriktirir. Sonda yaşlar listesini, iki sayıyı ve ortalamayı (toplam
+# / 5) yazdırır.
+
 """
 pk470 — Liste analiz sentezi: sayma, toplam, ortalama
 Önkoşul: pk440 (while ile liste doldurma), pk450 (for ile liste doldurma)

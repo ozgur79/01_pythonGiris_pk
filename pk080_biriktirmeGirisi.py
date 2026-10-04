@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, kullanıcıdan 3 sayıyı sırayla int(input()) ile alır. İlk sayıyla başlayan "toplam"
+# değişkenine her yeni sayıyı ekleyerek (toplam = sayi + toplam) biriktirir ve toplamı yazdırır;
+# döngü yok, üç adım elle yazılı.
+
 """
 pk080 — Biriktirme (accumulator) girişi
 Önkoşul: pk070 (print() içinde değişken/string literal farkı)

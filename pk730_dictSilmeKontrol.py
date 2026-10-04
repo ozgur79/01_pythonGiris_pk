@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, ogrenci sözlüğünden del ile "okul" anahtarını siler ve yazdırır; "isim" in ogrenci ve
+# "okul" in ogrenci sonuçlarını yazdırır (True, False). Sonra "telefon" anahtarı varsa numarayı,
+# yoksa "Telefon bilgisi kayıtlı değil." yazar.
+
 """
 pk730 — Silme, key kontrolü
 Önkoşul: pk720 (erişim, ekleme, güncelleme), pk420 (for eleman in liste),

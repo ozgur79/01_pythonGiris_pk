@@ -1,3 +1,7 @@
+# BU KOD NE YAPAR?
+# Bu kod, [10, 20, 30, 40, 50] listesinden liste[1:4], liste[0:3], liste[:3], liste[2:] ve
+# liste[:] dilimlerini yazdırır. Sonda orijinal listenin değişmediğini gösterir.
+
 """
 pk430 — Dilimleme (slicing)
 Önkoşul: pk410 (liste nedir, oluşturma, index)

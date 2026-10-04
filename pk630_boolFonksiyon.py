@@ -1,3 +1,8 @@
+# BU KOD NE YAPAR?
+# Bu kod, sayi % 2 == 0 ise True, değilse False döndüren cift_mi(sayi) fonksiyonunu tanımlar.
+# Kullanıcıdan sayı alıp "Çift sayıdır." ya da "Tek sayıdır." yazar, sonra cift_mi(7) ve
+# cift_mi(10) sonuçlarını yazdırır.
+
 """
 pk630 — Bool döndüren fonksiyon
 Önkoşul: pk610 (fonksiyon tanımı, parametre, return), pk280 (% operatörü),
