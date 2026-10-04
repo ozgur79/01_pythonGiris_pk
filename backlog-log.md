@@ -16,3 +16,13 @@ Backlog'dan silinen her madde tarihiyle buraya eklenir. Hiçbir şey silinmez.
   taraması (str/float/round/**/items/keys/values/split/strip), 114 dosyanın py_compile testi.
   Son iki küçük düzeltme (pk260→pk150 önkoşulu, pk460'ın pk050'ye gereksiz atfının kaldırılması)
   ile müfredat kapandı.
+
+## 2026-10-04
+
+- "BU KOD NE YAPAR?" bloğu kuralı eklendi (ak'deki kuralın pk uyarlaması, zihinev-3f üzerinden
+  Özgür onayıyla): her `pk*.py`'nin başında, başlık docstring'inden önce 2-3 satırlık `#` bloğu;
+  onar alıştırmalarında yalnız amaç, `cozumler/` kapsam dışı. CLAUDE.md ve AGENTS.md "Sert
+  sınırlar"a aynı metinle işlendi.
+- 57 scriptin hepsine blok eklendi (kod okunarak yazıldı), tümü py_compile ile derleniyor.
+  pk045 onar değil kasıtlı çöken ders olduğundan çöküş bloğa açık yazıldı. Çıktı karşılaştırması
+  yapılmadı. Commit'ler: 2d0a00b (köprü bloğu + kimlik_pk.txt), 5689bd7 (kural + 57 script).
